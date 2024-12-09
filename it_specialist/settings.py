@@ -112,7 +112,7 @@ SIMPLE_JWT = {
     "ROTATE_REFRESH_TOKENS": False,
     "BLACKLIST_AFTER_ROTATION": True,
     "ALGORITHM": "HS256",
-    "SIGNING_KEY": "ff1qwqo_3qw91zk3lu55h&6yu=8^6e%9ij$$7yx_0h^9rk^3dm",
+    "SIGNING_KEY": env.str("SECRET_KEY"),
     "AUTH_HEADER_TYPES": ("Bearer",),
     "AUTH_HEADER_NAME": "HTTP_AUTHORIZATION",
     "USER_ID_FIELD": "id",
